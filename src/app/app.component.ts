@@ -8,6 +8,14 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   @ViewChild('form') signupForm: NgForm;
+  // value = "basic" > Basic < /option>
+  //   < option value = "advanced" > Advanced < /option>
+  //     < option value = "pro" > Pro < /option>
+  subscriptions = [
+    { name: 'Basic', value: 'basic' },
+    { name: 'Advanced', value: 'advanced' },
+    { name: 'Professional', value: 'pro' }
+  ];
   application = {
     email: '',
     subscription: '',
